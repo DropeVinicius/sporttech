@@ -1,0 +1,61 @@
+.banner-home {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    /* evita rolagem horizontal */
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Escurecimento */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.conteudo-banner h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.botao-criar-conta {
+    background-color: #26D07C;
+    color: #020202;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.botao-criar-conta:hover {
+    background-color: #1fb56b;
+}
+
+.lojas-banner {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.lojas-banner img {
+    width: auto;
+    max-width: 150px;
+}

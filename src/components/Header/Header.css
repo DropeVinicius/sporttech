@@ -1,0 +1,49 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+        /* Transparente */
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(8px);
+    /* Suaviza o fundo atrás */
+    -webkit-backdrop-filter: blur(8px);
+    /* Suporte Safari */
+}
+
+.logo-header {
+    height: 50px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-header a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cadastre-se-btn {
+    background-color: #00D86F;
+    color: #000;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cadastre-se-btn:hover {
+    background-color: #00b75e;
+}

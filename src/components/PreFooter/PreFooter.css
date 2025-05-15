@@ -1,0 +1,135 @@
+.prefooter-container {
+    width: 100%;
+    background-color: #333;
+    padding: 40px 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.linha-depoimentos {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.depoimento-fixo {
+    background-color: #26D07C;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 240px;
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimento-fixo h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+
+.carousel-depoimentos {
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+    scroll-behavior: smooth;
+    flex: 1;
+}
+
+
+.card-depoimento {
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 320px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.avatar-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    align-self: left;
+}
+.avatar-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.nome-usuario {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.texto-depoimento {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.autor-depoimento {
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+    text-align: left;
+}
+
+.navegacao-setas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.seta {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.seta:hover {
+    background-color: #555;
+}
+
+.frase-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.frase-texto {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+    
+}
+
+.lojas img {
+    height: 150px;
+    width: auto;
+    cursor: pointer;
+}
