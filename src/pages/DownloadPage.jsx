@@ -11,7 +11,10 @@ const DownloadPage = () => {
         <div className="download-page">
             <div className="overlay"></div>
             <div className="download-card">
-                <img src={logo} alt="Logo" className="logo" />
+                {/* Logo clicável que redireciona para /home */}
+                <Link to="/home">
+                    <img src={logo} alt="Logo" className="logo" />
+                </Link>
                 <h2>Já possui seu Cadastro?</h2>
                 <p>
                     Baixe agora o nosso aplicativo e acesse sua <br />conta para iniciar suas aulas e se divertir!
