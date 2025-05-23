@@ -29,8 +29,13 @@ const LoginAlunoPage = () => {
         }
 
         if (data.user) {
+            // Simulação: você pode usar um nome fixo ou pegar do email para criar um nome simples
+            const nomeSimulado = "Conta Teste";
+
+            // Salva no localStorage
+            localStorage.setItem('usuario_nome', nomeSimulado);
+
             setMensagem('Login realizado com sucesso!');
-            // Redireciona para /download após 1 segundo (para o usuário ver a mensagem)
             setTimeout(() => {
                 navigate('/download');
             }, 1000);

@@ -58,7 +58,7 @@ const CadastroAluno = () => {
         const { error: insertError } = await supabase
             .from('user')
             .insert([{
-                id_auth: userId,
+                id: userId,
                 nome: form.nome,
                 cpf: form.cpf,
                 email: form.email,
