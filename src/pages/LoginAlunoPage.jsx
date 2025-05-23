@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import '../styles/LoginPage.css';
-
+import { supabase } from '../supabaseClient';
 import logoAluno from '../assets/logoaluno.png';
+import { useNavigate } from "react-router-dom";
 
 const LoginAlunoPage = () => {
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [mensagem, setMensagem] = useState('');
+    const navigate = useNavigate();
+
+    const handleLogin = async () => {
+        setMensagem('');
+
+        if (!email || !senha) {
+            setMensagem('Por favor, preencha e-mail e senha.');
+            return;
+        }
+
+        const { data, error } = await supabase.auth.signInWithPassword({
+            email,
+            password: senha,
+        });
+
+        if (error) {
+            setMensagem(`Erro no login: ${error.message}`);
+            return;
+        }
+
+        if (data.user) {
+            setMensagem('Login realizado com sucesso!');
+            // Redireciona para /download após 1 segundo (para o usuário ver a mensagem)
+            setTimeout(() => {
+                navigate('/download');
+            }, 1000);
+        }
+    };
+
     return (
         <div className="login-container">
             <div className="login-card">
@@ -15,13 +48,23 @@ const LoginAlunoPage = () => {
                     type="email"
                     className="input-field"
                     placeholder="E-mail"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                     type="password"
                     className="input-field"
                     placeholder="Senha"
+                    value={senha}
+                    onChange={(e) => setSenha(e.target.value)}
                 />
-                <button className="button">ENTRAR</button>
+                <button className="button" onClick={handleLogin}>ENTRAR</button>
+
+                {mensagem && (
+                    <p style={{ color: mensagem.includes('Erro') ? 'red' : 'green', marginTop: '10px' }}>
+                        {mensagem}
+                    </p>
+                )}
 
                 <p className="forgot-password">Esqueci minha senha</p>
                 <p className="language-selector">🌐 Português - BR</p>
