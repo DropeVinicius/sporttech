@@ -60,7 +60,6 @@ const CadastroAluno = () => {
             .insert([{
                 id: userId,
                 nome: form.nome,
-                cpf: form.cpf,
                 email: form.email,
                 telefone: form.telefone,
                 estado: form.estado,
@@ -75,7 +74,6 @@ const CadastroAluno = () => {
             setMensagem('Cadastro realizado com sucesso!');
             setForm({
                 nome: '',
-                cpf: '',
                 email: '',
                 senha: '',
                 confirmarSenha: '',
