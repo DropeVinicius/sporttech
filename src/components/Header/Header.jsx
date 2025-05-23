@@ -14,7 +14,9 @@ const Header = () => {
                 <Link to="/alunos-praticantes">Para Alunos e Praticantes</Link>
                 <Link to="/gamificacao">Gamificação</Link>
                 <Link to="/sobre-nós">Quem somos</Link>
-                <button className="cadastre-se-btn">Cadastre-se</button>
+                <Link to="/cadastro-hub">
+                    <button className="cadastre-se-btn">Cadastre-se</button>
+                </Link>
             </nav>
         </header>
     );
