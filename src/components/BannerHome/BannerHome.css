@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 .banner-home {
     background-size: cover;
     background-position: center;
@@ -34,7 +43,7 @@
     background-color: #26D07C;
     color: #020202;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 400;
     border: none;
     border-radius: 30px;
@@ -58,4 +67,43 @@
 .lojas-banner img {
     width: auto;
     max-width: 150px;
+}
+
+@media (max-width: 768px) {
+    .banner-home {
+        height: auto !important;
+        min-height: 400px !important;
+    }
+
+    .overlay {
+        padding: 40px 20px 100px 20px;
+        /* padding inferior maior */
+        justify-content: center !important;
+    }
+
+    .conteudo-banner h1 {
+        font-size: 1.5em;
+        max-width: 100%;
+        text-align: left !important;
+    }
+
+    .botao-criar-conta {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .lojas-banner {
+        position: static ;
+        margin: 20px auto 0 auto !important;
+        display: flex !important;
+        justify-content: center !important;
+        z-index: 1 !important;
+    }
+
+    .lojas-banner img {
+        max-width: 120px !important;
+        width: 100% !important;
+    }
 }

@@ -1,9 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 .como-funciona {
     background-color: #333;
     color: #fff;
     padding: 60px 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    /* evita overflow lateral */
 }
 
 .como-funciona h2 {
@@ -18,16 +29,22 @@
     gap: 40px;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    max-width: 100%;
+    /* não ultrapassa tela */
 }
 
 .card {
     background-color: #fff;
     color: #020202;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    /* permite responsividade */
     padding: 20px;
     border-radius: 12px;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+     /* evita encolhimento estranho */
 }
 
 .card img {
@@ -84,4 +101,28 @@
 .botao-link:hover {
     background-color: #00b75e;
     opacity: 0.9;
+}
+/* Media Query Responsiva */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .botoes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao-link {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
 }

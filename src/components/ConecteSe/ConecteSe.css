@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%; 
+}
+
 .conecte-se {
     width: 100%;
 }
@@ -135,7 +145,18 @@
     max-width: 1000px;
     box-sizing: border-box;
 }
+@media (max-width: 768px) {
+    .faixa-preta {
+        padding: 15px 10px !important;
+    }
 
+    .faixa-preta p {
+        font-size: 16px !important;
+        padding: 0 10px !important;
+        max-width: 100% !important;
+        text-align: left !important;
+    } 
+}
 .botao-gamificacao {
     text-decoration: none;
     /* E caso queira manter aparência de botão: */
@@ -148,3 +169,39 @@
     font-weight: bold;
     border: none;
     cursor: pointer; }
+
+        @media (max-width: 768px) {
+            .conecte-banner {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                justify-content: flex-end !important;
+                padding: 20px !important;
+                height: auto !important;
+            }
+    
+            .texto-banner {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                width: 100% !important;
+                gap: 15px !important;
+            }
+    
+            .texto-banner h2 {
+                font-size: 1.4em !important;
+                line-height: 1.4em !important;
+                max-width: 100% !important;
+            }
+    
+            .botao-gamificacao {
+                font-size: 0.9em !important;
+                padding: 8px 16px !important;
+                border-radius: 20px !important;
+                margin-left: 0 !important; 
+            }
+    
+            .selo-sobreposto {
+                width: 60px !important;
+                top: 10px !important;
+                right: 10px !important;
+            }
+        }

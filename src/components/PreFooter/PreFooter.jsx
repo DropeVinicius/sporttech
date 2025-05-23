@@ -11,15 +11,17 @@ export default function PreFooter() {
 
     const scrollLeft = () => {
         if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: -320, behavior: 'smooth' });
+            const cardWidth = carouselRef.current.querySelector('.card-depoimento').offsetWidth;
+            carouselRef.current.scrollBy({ left: -cardWidth, behavior: 'smooth' });
         }
     };
 
     const scrollRight = () => {
         if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: 320, behavior: 'smooth' });
+            const cardWidth = carouselRef.current.querySelector('.card-depoimento').offsetWidth;
+            carouselRef.current.scrollBy({ left: cardWidth, behavior: 'smooth' });
         }
-    };
+      };
 
     return (
         <div className="prefooter-container">

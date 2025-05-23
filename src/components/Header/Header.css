@@ -23,7 +23,7 @@
 .nav-header {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .nav-header a {
@@ -46,4 +46,41 @@
 
 .cadastre-se-btn:hover {
     background-color: #00b75e;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #1E1E1E;
+}
+
+@media (max-width: 768px) {
+    .nav-header {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 2rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 6px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .nav-header.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .cadastre-se-btn {
+        width: 100%;
+        text-align: center;
+    }
 }
