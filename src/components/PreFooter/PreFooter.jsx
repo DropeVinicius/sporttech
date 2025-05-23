@@ -4,6 +4,7 @@ import avatar1 from '../../assets/avatarone.png';
 import avatar2 from '../../assets/avatartwo.png';
 import avatar3 from '../../assets/avatarthree.png';
 import lojasbanner from '../../assets/Google Play e Apple.svg';
+import { Link } from 'react-router-dom'; // não esqueça disso no topo
 
 export default function PreFooter() {
     const carouselRef = useRef(null);
@@ -81,7 +82,9 @@ export default function PreFooter() {
             <div className="frase-final">
                 <h3 className="frase-texto">Conecte-se. Evolua. Inspire.</h3>
                 <div className="lojas">
-                    <img src={lojasbanner} alt="App Stores" />
+                    <Link to="/download">
+                        <img src={lojasbanner} alt="App Stores" />
+                    </Link>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import './PreFooterG.css';
 import lojasbanner from '../../assets/Google Play e Apple.svg';
 import corrida from '../../assets/motivacao.jpg';
 import qrCode from '../../assets/qrcode.png';
+import { Link } from 'react-router-dom';
 
 export default function PreFooterG() {
     return (
@@ -18,7 +19,9 @@ export default function PreFooterG() {
                     <p className="texto-jornada">
                         Comece agora sua jornada esportiva com diversão e propósito.
                     </p>
-                    <button className="botao-criar-conta">Criar conta gratuita</button>
+                    <Link to="/cadastro-hub" className="botao-criar-conta">
+                        Crie sua conta agora
+                    </Link>
                     <p className="texto-download">Ou faça o download do app:</p>
                     <img src={qrCode} alt="QR Code do app" className="qrcode" />
                 </div>
@@ -27,9 +30,9 @@ export default function PreFooterG() {
             {/* Frase final e banner */}
             <div className="frase-final">
                 <h3 className="frase-texto">Conecte-se. Evolua. Inspire.</h3>
-                <div className="lojas">
+                <Link to="/download" className="lojas">
                     <img src={lojasbanner} alt="App Stores" />
-                </div>
+                </Link>
             </div>
         </section>
     );

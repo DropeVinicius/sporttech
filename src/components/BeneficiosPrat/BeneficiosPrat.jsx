@@ -3,6 +3,7 @@ import "./BeneficiosPrat.css";
 import firststep from "../../assets/firststep.svg";
 import secondstep from "../../assets/secondstep.svg";
 import thirdstep from "../../assets/thirdstep.svg";
+import { Link } from 'react-router-dom';
 
 export default function BeneficiosPrat() {
     return (
@@ -27,7 +28,9 @@ export default function BeneficiosPrat() {
             </div>
 
             <div className="botoes-container">
-                <button>Seja um Aluno ou Praticante</button>
+                <Link to="/cadastro-hub">
+                    <button>Seja um Aluno ou Praticante</button>
+                </Link>
             </div>
         </section>
     );

@@ -15,9 +15,9 @@ export default function BannerGame() {
                     </Link>
                 </div>
             </div>
-            <div className="lojas-banner">
+            <Link to="/download" className="lojas-banner">
                 <img src={lojasbanner} alt="App Stores" />
-            </div>
+            </Link>
         </div>
     );
 }

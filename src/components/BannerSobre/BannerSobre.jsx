@@ -1,7 +1,9 @@
 import React from 'react';
 import './BannerSobre.css';
-import lojasbanner from '../../assets/download.png';
+import lojasbanner from '../../assets/Google Play e Apple.svg';
 import bannerinst from '../../assets/bannerinst.jpg';
+import { Link } from 'react-router-dom';
+
 
 export default function BannerSobre() {
     return (
@@ -12,9 +14,9 @@ export default function BannerSobre() {
                     <button className="botao-criar-conta">Crie sua conta agora</button>
                 </div>
             </div>
-            <div className="lojas-banner">
+            <Link to="/download" className="lojas-banner">
                 <img src={lojasbanner} alt="App Stores" />
-            </div>
+            </Link>
         </div>
     );
 }
