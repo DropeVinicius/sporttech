@@ -12,8 +12,8 @@ const Header = () => {
             <nav className="nav-header">
                 <Link to="/professores">Para Professores</Link>
                 <Link to="/alunos-praticantes">Para Alunos e Praticantes</Link>
-                <a href="#gamificacao">Gamificação</a>
-                <a href="#quem-somos">Quem Somos</a>
+                <Link to="/gamificacao">Gamificação</Link>
+                <Link to="/sobre-nós">Quem somos</Link>
                 <button className="cadastre-se-btn">Cadastre-se</button>
             </nav>
         </header>

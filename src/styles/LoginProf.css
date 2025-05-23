@@ -1,0 +1,103 @@
+/* Estilos globais */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Estilo geral do container */
+.login-container {
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background-color: white;
+    width: 90%;
+    max-width: 700px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    width: 250px;
+    margin-bottom: 2rem;
+}
+
+/* Título */
+.title {
+    color: #2D595E;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Subtítulo */
+.subtitle {
+    color: #61636C;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: regular;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-bottom: 2px solid #2D595E;
+    /* destaque ao focar */
+}
+
+/* Botão de Entrar */
+.button {
+    background-color: #333;
+    color: #FFF;
+    padding: 0.75rem;
+    width: 50%;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+/* Texto clicável Esqueci minha senha */
+.forgot-password {
+    color: #2D595E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: regular;
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+/* Seleção de Idioma */
+.language-selector {
+    color: #2D595E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}

@@ -3,7 +3,7 @@ import './PreFooter.css';
 import avatar1 from '../../assets/avatarone.png';
 import avatar2 from '../../assets/avatartwo.png';
 import avatar3 from '../../assets/avatarthree.png';
-import lojasbanner from '../../assets/download.png';
+import lojasbanner from '../../assets/Google Play e Apple.svg';
 
 export default function PreFooter() {
     const carouselRef = useRef(null);

@@ -1,5 +1,6 @@
 import React from "react";
 import "./ConecteSe.css";
+import { Link } from 'react-router-dom';
 import bannervolei from "../../assets/bannervolei.jpg";
 import selo from "../../assets/selo.svg";
 import beachtennis from "../../assets/beachtennis2.jpg";
@@ -19,9 +20,9 @@ export default function ConecteSe() {
                         Treine.<br />
                         Evolua no esporte com <span className="verde">motivação.</span>
                     </h2>
-                    <button className="botao-gamificacao">
+                    <Link to="/gamificacao" className="botao-gamificacao">
                         Saiba mais sobre a <strong>Gamificação</strong>
-                    </button>
+                    </Link>
                 </div>
             </div>
 
@@ -30,7 +31,6 @@ export default function ConecteSe() {
                 <h2 className="titulo-centralizado">
                     Para <span className="verde">quem</span> é o SporTech?
                 </h2>
-
                 <div className="cards-conecte">
                     <div className="card-conecte">
                         <img src={basquete} alt="Professor" className="card-img" />

@@ -28,8 +28,12 @@ const CadastroAluno = () => {
                     <label className="label-select">Modalidade de Interesse</label>
                     <select>
                         <option disabled selected>Selecione</option>
+                        <option>Beach Tennis</option>
+                        <option>Vôlei de Praia</option>
+                        <option>Futevôlei</option>
                         <option>Musculação</option>
                         <option>Corrida</option>
+                        <option>Muay Thai</option>
                         <option>Yoga</option>
                     </select>
                 </div>

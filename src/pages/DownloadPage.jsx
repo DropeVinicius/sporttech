@@ -2,8 +2,9 @@ import React from "react";
 import '../styles/DownloadPage.css'; // estilos separados
 import logo from '../assets/logoaluno.png';
 import qrCode from '../assets/qrcode.png';
-import googlePlay from '../assets/googleplay.png'; // botão imagem
-import appStore from '../assets/appstore.png';   // botão imagem
+import download from '../assets/Google Play e Apple.svg'; // botão imagem
+import { Link } from 'react-router-dom';
+
 
 const DownloadPage = () => {
     return (
@@ -22,18 +23,16 @@ const DownloadPage = () => {
                         <img src={qrCode} alt="QR Code" className="qr-code" />
                     </div>
                     <div className="store-buttons">
-                        <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
-                            <img src={googlePlay} alt="Google Play" />
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src={download} alt="Google Play" />
                         </a>
-                        <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
-                            <img src={appStore} alt="App Store" />
-                        </a>
+                        
                     </div>
                 </div>
 
-                <button className="register-button">
+                <Link to="/cadastro-hub" className="register-button">
                     CADASTRA-SE SE AINDA NÃO POSSUIR CONTA
-                </button>
+                </Link>
             </div>
         </div>
     );

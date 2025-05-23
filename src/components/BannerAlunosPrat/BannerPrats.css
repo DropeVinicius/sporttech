@@ -1,0 +1,13 @@
+.botao-criar-conta {
+    background-color: #26D07C !important;
+        color: #020202 !important;
+        border: none !important;
+        border-radius: 25px !important;
+        padding: 12px 24px !important;
+        font-family: 'Poppins', sans-serif !important;
+        font-size: 16px !important;
+        cursor: pointer !important;
+        transition: 0.3s ease !important;
+     }
+
+        

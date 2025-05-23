@@ -1,7 +1,8 @@
 import React from "react";
 import './BannerHome.css';
-import lojasbanner from '../../assets/download.png';
+import lojasbanner from '../../assets/Google Play e Apple.svg';
 import banner from '../../assets/bannertenis.jpg';
+import { Link } from 'react-router-dom';
 
 export default function BannerHome() {
     return (
@@ -9,7 +10,9 @@ export default function BannerHome() {
             <div className="overlay">
                 <div className="conteudo-banner">
                     <h1>Aprenda, ensine e pratique esportes como nunca antes.</h1>
-                    <button className="botao-criar-conta">Crie agora a sua conta</button>
+                    <Link to="/cadastro-hub" className="botao-criar-conta">
+                        Crie agora a sua conta
+                    </Link>
                 </div>
             </div>
             <div className="lojas-banner">

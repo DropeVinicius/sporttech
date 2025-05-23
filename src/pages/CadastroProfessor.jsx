@@ -28,9 +28,13 @@ const CadastroProfessor = () => {
                 <label className="label-select">Modalidade</label>
                 <select>
                     <option disabled selected>Selecione</option>
-                    <option>Musculação</option>
-                    <option>Corrida</option>
-                    <option>Yoga</option>
+                        <option>Beach Tennis</option>
+                        <option>Vôlei de Praia</option>
+                        <option>Futevôlei</option>
+                        <option>Musculação</option>
+                        <option>Corrida</option>
+                        <option>Muay Thai</option>
+                        <option>Yoga</option>
                 </select>
                 </div>
                 <button className="botao-cadastrar">CADASTRAR</button>

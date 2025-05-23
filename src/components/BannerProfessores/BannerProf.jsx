@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importa o Link
 import './BannerProf.css';
-import lojasbanner from '../../assets/download.png';
+import lojasbanner from '../../assets/Google Play e Apple.svg';
 import bannerprof from '../../assets/bannerprof.png';
 
 export default function BannerProf() {
@@ -9,7 +10,9 @@ export default function BannerProf() {
             <div className="overlay">
                 <div className="conteudo-banner">
                     <h1>Transforme sua paixão por esporte em carreira.</h1>
-                    <button className="botao-criar-conta">Seja um professor</button>
+                    <Link to="/cadastro-professor" className="botao-criar-conta">
+                        Seja um professor
+                    </Link>
                 </div>
             </div>
             <div className="lojas-banner">

@@ -59,3 +59,15 @@
     width: auto;
     max-width: 150px;
 }
+
+.botao-criar-conta {
+    text-decoration: none;
+    background-color: #28a745;
+    /* Cor de fundo */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: inline-block; }

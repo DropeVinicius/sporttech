@@ -1,0 +1,84 @@
+.cadastro-hub-page {
+    position: relative;
+    height: 100vh;
+    background-image: url('../assets/backgroundownload.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cadastro-hub-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) brightness(0.4);
+    z-index: 0;
+}
+
+.cadastro-hub-page .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* escurece um pouco mais */
+    z-index: 1;
+}
+
+.hub-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+}
+
+.hub-title {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.hub-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.hub-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hub-button {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.hub-button.aluno {
+    background-color: #007bff;
+}
+
+.hub-button.praticante {
+    background-color: #28a745;
+}
+
+.hub-button.professor {
+    background-color: #ff5722;
+}
+
+.hub-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05); }
