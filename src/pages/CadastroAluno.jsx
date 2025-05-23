@@ -61,9 +61,6 @@ const CadastroAluno = () => {
                 id: userId,
                 nome: form.nome,
                 email: form.email,
-                telefone: form.telefone,
-                estado: form.estado,
-                modalidade: form.modalidade,
                 tipo: 'aluno'
             }]);
 
@@ -77,9 +74,7 @@ const CadastroAluno = () => {
                 email: '',
                 senha: '',
                 confirmarSenha: '',
-                telefone: '',
-                estado: '',
-                modalidade: ''
+                telefone: ''
             });
         }
     };
